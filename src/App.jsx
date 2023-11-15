@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import AddMovie from "./pages/AddMovie";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AddGenre from "./pages/AddGenre";
+import MapTable from "./pages/MapTable";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -31,10 +32,14 @@ function App() {
         //   path: "/genre",
         //   element: <AddGenre />,
         // },
-    {
-      path: "/genre",
-      element: <AddGenre/>
-    }
+        {
+          path: "/genre",
+          element: <AddGenre />,
+        },
+        {
+          path: "/map",
+          element: <MapTable />,
+        },
       ],
     },
   ]);
